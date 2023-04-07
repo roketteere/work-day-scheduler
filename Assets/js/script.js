@@ -31,6 +31,11 @@ $(function () {
             }
         }
     }
+    function saveTask(id, description) {
+        localStorage.setItem(id, description);
+        console.log(id, "Was saved in localStorage", "Description: ", description);
+    }
+
     function loadTask() {
         var start = 9;
         var end = 17;
@@ -46,10 +51,7 @@ $(function () {
 
 
         }
-        function saveTask(id, description) {
-            localStorage.setItem(id, description);
-            console.log(id, "Was saved in localStorage", "Description: ", description);
-        }
+
         var dateElement = $("#currentDay");
         dateElement.text(dayjs().format("MMM DD, YYYY h:mma"));
 
