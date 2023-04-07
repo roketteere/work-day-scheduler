@@ -44,7 +44,7 @@ $(function () {
         for (var i = start; i <= end; i++) {
             var description = localStorage.getItem(i);
 
-            $("hour-" + i).children("textarea").val(description);
+            $("#hour-" + i).children("textarea").val(description);
             setColor(i);
             console.log("Task Hour: ", i);
             console.log("Task Description: ", description);
@@ -52,11 +52,10 @@ $(function () {
 
         }
 
-        var dateElement = $("#currentDay");
-        dateElement.text(dayjs().format("MMM DD, YYYY h:mma"));
-
 
     }
+    var dateElement = $("#currentDay");
+    dateElement.text(dayjs().format("MMM DD, YYYY h:mma"));
 
 
 });
