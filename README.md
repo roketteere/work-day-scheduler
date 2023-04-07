@@ -13,3 +13,7 @@ A simple yet effective work day scheduler!
 ![Screen shot showing web app after 9-5 work hours](./Assets/screenshots/screenshot-3.png)
 
 ![Screen shot showing web app again after 9-5 work hours](./Assets/screenshots/screenshot-2.png)
+
+## Demo
+
+![Demo of the Work Day Scheduler Web App](./Assets/screenshots/Joel-Perez_Work-Day-Scheduler-Demo.gif)
