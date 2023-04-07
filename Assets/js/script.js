@@ -1,7 +1,14 @@
 $(function () {
+
     loadTask();
     // grab the button using the class and attach an event listener. Get the id and use this to make sure
     // we are referring to the right element and use the split method to split across the - to get the number value. Use dom traversal again and set the description to the appropriate element
+
+
+
+    loadTask()
+
+
     $(".saveBtn").on("click", function (event) {
         var id = $(this).parent().attr("id").split("-")[1];
         var description = $(this).prev().val();
@@ -32,12 +39,18 @@ $(function () {
             }
         }
     }
+
     // function that takes the id and description of the task as parameter and saves it to the local storage. This also has a console.log
+
     function saveTask(id, description) {
         localStorage.setItem(id, description);
         console.log(id, "Was saved in localStorage", "Description: ", description);
     }
+
     // function to load saved items from the local storage
+
+
+
     function loadTask() {
         var start = 9;
         var end = 17;
@@ -46,13 +59,14 @@ $(function () {
         for (var i = start; i <= end; i++) {
             var description = localStorage.getItem(i);
 
-            $("hour-" + i).children("textarea").val(description);
+            $("#hour-" + i).children("textarea").val(description);
             setColor(i);
             console.log("Task Hour: ", i);
             console.log("Task Description: ", description);
 
 
         }
+ 
 
         // created a variable to get the time place holder and and wrapped it in a setInterval() and set the time to tick every 1000, and lastly update the display
         setInterval(function () {
@@ -62,7 +76,10 @@ $(function () {
         }, 1000);
 
 
+
     }
+    var dateElement = $("#currentDay");
+    dateElement.text(dayjs().format("MMM DD, YYYY h:mma"));
 
 
 });
