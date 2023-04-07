@@ -31,30 +31,30 @@ $(function () {
             }
         }
     }
-
     function loadTask() {
         var start = 9;
         var end = 17;
 
-        if (localStorage.getItem(start) !== null) {
-            var description = localStorage.getItem(start);
-            for (start; start <= end; start++) {
-                $("Hour-" + start).children("textarea").val(description);
-                console.log("Task Hour: ", start);
-                console.log("Task Description: ", description);
-            }
-        } else 
-            console.log("Nothing in local storage");
-        
+
+        for (var i = start; i <= end; i++) {
+            var description = localStorage.getItem(i);
+
+            $("hour-" + i).children("textarea").val(description);
+            setColor(i);
+            console.log("Task Hour: ", i);
+            console.log("Task Description: ", description);
+
+
+        }
+        function saveTask(id, description) {
+            localStorage.setItem(id, description);
+            console.log(id, "Was saved in localStorage", "Description: ", description);
+        }
+        var dateElement = $("#currentDay");
+        dateElement.text(dayjs().format("MMM DD, YYYY h:mma"));
 
 
     }
-    function saveTask(id, description) {
-        localStorage.setItem(id, description);
-        console.log(id, "Was saved in localStorage", "Description: ", description);
-    }
-    var dateElement = $("#currentDay");
-    dateElement.text(dayjs().format("MMM DD, YYYY h:mma"));
 
 
 });
