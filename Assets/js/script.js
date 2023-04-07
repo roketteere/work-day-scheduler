@@ -1,5 +1,7 @@
 $(function () {
-    loadTask();
+
+
+    loadTask()
 
     $(".saveBtn").on("click", function (event) {
         var id = $(this).parent().attr("id").split("-")[1];
