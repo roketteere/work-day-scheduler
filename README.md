@@ -1,12 +1,12 @@
-# work-day-scheduler
+# Work Day Scheduler
 
 A simple yet effective work day scheduler!
 
-# Description
+## Description
 
 - Work day task tracking app. A simple web app to keep track of all your 9-5 work tasks.
 
-# Screenshots
+## Screenshots
 
 ![Screen shot showing web app during 9-5 work hours](./Assets/screenshots/screenshot-1.png)
 
