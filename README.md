@@ -17,3 +17,7 @@ A simple yet effective work day scheduler!
 ## Demo
 
 ![Demo of the Work Day Scheduler Web App](./Assets/screenshots/Joel-Perez_Work-Day-Scheduler-Demo.gif)
+
+## Deployed App Link
+
+[a link](https://roketteere.github.io/work-day-scheduler/)
