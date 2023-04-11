@@ -20,4 +20,4 @@ A simple yet effective work day scheduler!
 
 ## Deployed App Link
 
-[a link](https://roketteere.github.io/work-day-scheduler/)
+[Work Day Scheduler Web App](https://roketteere.github.io/work-day-scheduler/)
